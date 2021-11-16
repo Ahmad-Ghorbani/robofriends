@@ -35,11 +35,11 @@ class App extends Component {
       </div>
     ) : (
       <div className="tc">
-        <h1 className="f1">RoboFriends</h1>
-        <SearchBox searchChange={this.SearchedRobots} />
         <Scroll>
-          <CardList robots={filteredRobots} />
+          <h1 className="f1">RoboFriends</h1>
+          <SearchBox searchChange={this.SearchedRobots} />
         </Scroll>
+        <CardList robots={filteredRobots} />
       </div>
     );
   }

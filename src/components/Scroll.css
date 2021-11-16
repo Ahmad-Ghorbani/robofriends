@@ -1,5 +1,13 @@
 .Scroll {
-  overflow-y: scroll;
-  height: 100vh;
-  border: 1px solid dodgerblue;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.02) 1.95px 1.95px 2.6px;
 }
